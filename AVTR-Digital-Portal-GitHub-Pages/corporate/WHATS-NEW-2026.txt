@@ -1,0 +1,40 @@
+AVTR WEBSITE — MODERN INTERACTION & MOBILE UPGRADE
+
+This build keeps the light AVTR visual identity and upgrades the complete website with:
+
+• Full responsive behavior for desktop, tablet and mobile.
+• Improved mobile navigation with open/close animation and ESC/outside-click handling.
+• Scroll progress indicator at the top of every page.
+• Floating Back to Top button.
+• Section-aware navigation on the Home page.
+• Staggered reveal animations as content enters the viewport.
+• Subtle interactive spotlight effect on cards (desktop only).
+• Very light 3D card movement (desktop only).
+• Magnetic button micro-interactions (desktop only).
+• Subtle parallax on major image panels (desktop only).
+• Animated numeric statistics on the Home page.
+• Better touch targets, font sizes and form controls on phones.
+• Responsive layouts for departments, service areas, complaints and content pages.
+• Reduced-motion accessibility support.
+• Focus-visible keyboard accessibility.
+• Lazy loading and async image decoding where appropriate.
+• START-AVTR.bat now serves the correct project folder on 0.0.0.0:8000.
+
+PHONE TESTING
+1. Double-click START-AVTR.bat.
+2. For a public HTTPS phone link, keep the server open and run:
+   cloudflared tunnel --url http://localhost:8000
+3. Open the generated trycloudflare.com link on the phone.
+
+Main design files:
+• design.css
+• main.js
+
+MANAGER PRESENTATION UPGRADE
+- Added interactive Amman service-sector map powered by Leaflet + OpenStreetMap.
+- Added sector focus controls and direct links to all five sector pages.
+- Added Smart Operating Model: Monitor > Field Check > Route Action > Learn & Improve.
+- Added Circular City / future pillars panel tied to AVTR's sustainability, smart-solutions and partnership direction.
+- Added live Amman time / operations status chip in the home hero.
+- Added Website Design & Development credit: MHMD OBEIDAT across site footers.
+- Added mobile-specific map, operating-flow and footer styling.

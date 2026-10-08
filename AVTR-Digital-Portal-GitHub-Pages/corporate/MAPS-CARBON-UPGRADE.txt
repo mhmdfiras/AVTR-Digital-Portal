@@ -1,0 +1,28 @@
+AVTR — Maps + Carbon Upgrade
+============================
+
+1) Designer contact
+- "MHMD OBEIDAT" in every footer is now clickable.
+- Clicking it opens a contact card showing 00962795151152.
+- CALL launches tel:+962795151152 on supported phones/devices.
+
+2) District Explorer maps
+- Added to North, East, West, South and Central Amman pages.
+- Click any district card to focus its map position and details.
+- Displays: district location, area, 2015 GAM population profile, administrative neighboring-boundary description, neighborhoods/localities, Google Maps link and official GAM profile link.
+- East Amman > Tareq includes the official GAM boundary relationship:
+  North: Shafa Badran / East: Marka / South: Basman / West: Al-Jubeiha.
+- Map controls include Light/Street basemap toggle, full-sector fit and My Location.
+- Important: marker positions are practical navigation centers. This is NOT a cadastral/survey boundary map. Official GAM profiles are linked as the administrative reference.
+
+3) Carbon & Climate
+- New page: carbon-climate.html
+- Added to navigation and homepage.
+- Includes Carbon Credits Management, MRV logic, GHG reduction workflow, standards/compliance, carbon-market readiness and stakeholder engagement.
+- Includes AVTR Al Ghabawi Landfill Gas to Energy Project 3370 case study:
+  Article 6.4 / ACM0001 / monitoring period 2021–2025 / verification in progress.
+- Source-based links point to AVTR official published pages.
+
+4) Safe package
+- No BAT, EXE or PowerShell script files are included.
+- Run from VS Code Terminal with: python -m http.server 8000

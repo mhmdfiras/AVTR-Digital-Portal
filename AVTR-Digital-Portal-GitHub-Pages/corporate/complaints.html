@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#f6f8f3" name="theme-color"/>
+<title>Complaints &amp; Service Requests | AVTR</title>
+<meta content="Submit a service complaint or field observation to AVTR with location details and photo evidence." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="design.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="nav-wrap"><div class="shell nav">
+<a class="brand" href="index.html"><img alt="AVTR" src="images/avtr-logo.png"/><span class="brand-copy"><strong>AVTR</strong><span>AMMAN VISION TREATMENT &amp; RECYCLING</span></span></a>
+<div class="nav-links"><a href="index.html#about">About</a><a href="index.html#departments">Departments</a><a href="index.html#services">Services</a><a href="carbon-climate.html">Carbon &amp; Climate</a><a href="amman-areas.html">Amman Areas</a><a class="active" href="complaints.html">Complaints</a></div>
+<a class="nav-cta" href="#complaint-form">SUBMIT REQUEST <i class="bi bi-arrow-down"></i></a><button aria-label="Menu" class="menu-btn"><i class="bi bi-list"></i></button>
+</div></div>
+<header class="complaint-hero">
+<div class="shell complaint-hero-grid">
+<div class="complaint-hero-copy reveal">
+<div class="breadcrumbs"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span>Complaints &amp; Service Requests</span></div>
+<span class="eyebrow">YOUR CITY. YOUR VOICE.</span>
+<h1>Report it.<br/><span>We’ll route it.</span></h1>
+<p>Send a service complaint, field observation or cleanliness issue with precise location details and photo evidence. The request is delivered directly by email to the designated complaints inbox.</p>
+<div class="complaint-channel-row">
+<div aria-label="Public complaints email" class="complaint-channel"><i class="bi bi-envelope"></i><span><small>COMPLAINTS EMAIL</small><strong>avtr@amman.com</strong></span></div>
+</div>
+</div>
+<div class="complaint-hero-panel reveal">
+<div class="complaint-hero-icon"><i class="bi bi-chat-square-text"></i></div>
+<span>SMART SERVICE REQUEST</span>
+<h2>More detail means faster routing.</h2>
+<div class="complaint-steps-mini">
+<div><b>01</b><span>Describe the issue</span></div>
+<div><b>02</b><span>Add the location</span></div>
+<div><b>03</b><span>Attach a photo</span></div>
+<div><b>04</b><span>Send &amp; follow up</span></div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="section complaint-form-section" id="complaint-form">
+<div class="shell complaint-layout">
+<aside class="complaint-side reveal">
+<span class="eyebrow">SERVICE REQUEST</span>
+<h2>Tell us what happened.</h2>
+<p>Complete the fields below as accurately as possible. Location and a clear image help identify the responsible service area and speed up field verification.</p>
+<div class="side-tip"><i class="bi bi-geo-alt"></i><div><strong>Location matters</strong><span>Use your current location or type the nearest landmark and street.</span></div></div>
+<div class="side-tip"><i class="bi bi-camera"></i><div><strong>One clear photo</strong><span>Upload JPG, PNG or WEBP. Maximum total upload size: 10 MB.</span></div></div>
+<div class="side-tip"><i class="bi bi-shield-check"></i><div><strong>Email follow-up</strong><span>Your email address is used only to follow up on this service request.</span></div></div>
+<div class="complaint-ref-card"><small>REFERENCE NUMBER</small><strong id="referencePreview">AVTR-—</strong><span>Generated automatically when the form loads.</span></div>
+</aside>
+<div class="complaint-form-card reveal">
+<form action="https://formsubmit.co/MHMDFIRAS01@GMAIL.COM" enctype="multipart/form-data" id="complaintForm" method="POST">
+<input id="subjectField" name="_subject" type="hidden" value="New AVTR Complaint"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_honey" type="hidden" value=""/>
+<input id="nextField" name="_next" type="hidden" value=""/>
+<input id="referenceField" name="Complaint Reference" type="hidden" value=""/>
+<input id="coordinatesField" name="GPS Coordinates" type="hidden" value="Not provided"/>
+<input id="mapsField" name="Google Maps Link" type="hidden" value="Not provided"/>
+<input name="Submission Channel" type="hidden" value="AVTR Website Complaint Form"/>
+<div class="form-section-title"><span>01</span><div><strong>Complaint details</strong><small>What type of issue are you reporting?</small></div></div>
+<div class="form-grid two">
+<label class="field"><span>Complaint type *</span><select id="complaintType" name="Complaint Type" required="">
+<option disabled="" selected="" value="">Select complaint type</option>
+<option>Missed waste collection</option>
+<option>Overflowing container / bin</option>
+<option>Street cleanliness</option>
+<option>Illegal dumping</option>
+<option>Damaged container / bin</option>
+<option>Waste collection vehicle issue</option>
+<option>Odor / pests / environmental nuisance</option>
+<option>Public space cleanliness</option>
+<option>Service quality complaint</option>
+<option>Other</option>
+</select><i class="bi bi-chevron-down field-chevron"></i></label>
+<label class="field"><span>Priority *</span><select id="priority" name="Priority" required="">
+<option value="Normal">Normal</option>
+<option value="Urgent">Urgent — requires quick attention</option>
+</select><i class="bi bi-chevron-down field-chevron"></i></label>
+</div>
+<label class="field"><span>Complaint description *</span><textarea id="description" maxlength="1200" name="Complaint Description" placeholder="Describe what you saw, when it happened, and any details that may help the field team..." required="" rows="6"></textarea><small class="char-count"><span id="descriptionCount">0</span>/1200</small></label>
+<div class="form-section-title"><span>02</span><div><strong>Location</strong><small>Pinpoint where the issue is located.</small></div></div>
+<div class="form-grid two">
+<label class="field"><span>Amman sector / area *</span><select name="Amman Sector" required="">
+<option disabled="" selected="" value="">Select sector</option>
+<option>North Amman</option><option>East Amman</option><option>West Amman</option><option>South Amman</option><option>Central Amman</option><option>Not sure</option>
+</select><i class="bi bi-chevron-down field-chevron"></i></label>
+<label class="field"><span>District / neighborhood</span><input name="District or Neighborhood" placeholder="e.g. Al-Abdali, Tla' Al-Ali" type="text"/></label>
+</div>
+<label class="field"><span>Street, landmark or location description *</span><input id="locationDescription" name="Location Description" placeholder="Street name, nearest landmark, building, container number..." required="" type="text"/></label>
+<div class="location-tools">
+<button class="location-btn" id="locationBtn" type="button"><i class="bi bi-crosshair"></i><span><strong>Use my current location</strong><small>Allow browser location access to add GPS coordinates.</small></span></button>
+<a class="location-result is-empty" href="#" id="locationResult" rel="noopener" target="_blank"><i class="bi bi-map"></i><span><strong>No GPS location added</strong><small>You can still submit a manual address.</small></span><i class="bi bi-arrow-up-right"></i></a>
+</div>
+<div class="form-section-title"><span>03</span><div><strong>Photo evidence</strong><small>Optional, but highly recommended.</small></div></div>
+<div class="upload-box" id="uploadBox">
+<input accept="image/jpeg,image/png,image/webp" id="photoInput" name="Complaint Photo" type="file"/>
+<div class="upload-empty" id="uploadEmpty"><i class="bi bi-cloud-arrow-up"></i><strong>Attach a photo</strong><span>Click here to select an image • JPG, PNG or WEBP</span></div>
+<div class="upload-preview" hidden="" id="uploadPreview"><img alt="Complaint photo preview" id="previewImage"/><div><strong id="previewName"></strong><span id="previewSize"></span><button id="removePhoto" type="button"><i class="bi bi-x-circle"></i> Remove photo</button></div></div>
+</div>
+<div class="form-section-title"><span>04</span><div><strong>Your details</strong><small>Email is the only follow-up channel for this complaint.</small></div></div>
+<div class="form-grid two">
+<label class="field"><span>Full name *</span><input autocomplete="name" name="Citizen Name" placeholder="Your full name" required="" type="text"/></label>
+<label class="field"><span>Email address *</span><input autocomplete="email" id="citizenEmail" name="email" placeholder="name@example.com" required="" type="email"/></label>
+</div>
+<input name="Preferred Follow-up" type="hidden" value="Email only"/>
+<label class="consent"><input required="" type="checkbox"/><span>I confirm that the information provided is accurate and I agree to receive complaint follow-up by email.</span></label>
+<div class="submit-panel">
+<div><small>THE FORM WILL</small><strong>Send the complaint by email</strong><span>The complaint details, location and attached photo are delivered to the designated complaints email.</span></div>
+<button class="submit-complaint" type="submit"><span>SUBMIT COMPLAINT</span><i class="bi bi-send"></i></button>
+</div>
+<p class="form-note"><i class="bi bi-info-circle"></i> On first use, the receiving email address must confirm the FormSubmit activation email once. After activation, complaint details and photo attachments are delivered by email.</p>
+</form>
+</div>
+</div>
+</section>
+<section class="section-sm"><div class="shell complaint-after reveal"><div><span class="eyebrow">WHAT HAPPENS NEXT</span><h2>A clear route from report to field action.</h2></div><div class="after-steps"><div><span>01</span><strong>Receive</strong><small>Complaint details arrive directly through the configured email channel.</small></div><div><span>02</span><strong>Classify</strong><small>The issue is categorized by location, type and priority.</small></div><div><span>03</span><strong>Verify</strong><small>Field or monitoring teams can review the submitted evidence.</small></div><div><span>04</span><strong>Follow up</strong><small>Email details allow clarification and status communication.</small></div></div></div></section>
+</main>
+<footer class="footer"><div class="shell"><div class="footer-main"><div class="footer-brand"><img alt="AVTR" src="images/avtr-logo.png"/><p>Shaping a cleaner, smarter and more circular future for Amman.</p></div><div class="footer-links"><a href="index.html#about">About</a><a href="index.html#services">Services</a><a href="amman-areas.html">Amman Areas</a><a href="monitoring-room.html">Monitoring Room</a><a href="field-operations.html">Field Operations</a><a href="complaints.html">Complaints</a><a href="carbon-climate.html">Carbon &amp; Climate</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> AMMAN VISION TREATMENT &amp; RECYCLING</span><span>AMMAN • JORDAN</span><span class="creator-credit">WEBSITE DESIGN &amp; DEVELOPMENT <strong>MHMD OBEIDAT</strong></span></div></div></footer>
+<script src="main.js"></script><script src="complaints.js"></script>
+</body></html>

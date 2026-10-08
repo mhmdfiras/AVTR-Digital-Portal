@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<meta content="#f6f8f3" name="theme-color"/>
+<title>West Amman | AVTR</title>
+<meta content="A western service network connecting Badr Al-Jadida, Sweileh, Wadi Al-Seer and Marj Al-Hamam." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet"/>
+<link href="design.css" rel="stylesheet"/>
+<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/></head>
+<body><div class="nav-wrap"><div class="shell nav">
+<a class="brand" href="index.html"><img alt="AVTR" src="images/avtr-logo.png"/><span class="brand-copy"><strong>AVTR</strong><span>AMMAN VISION TREATMENT &amp; RECYCLING</span></span></a>
+<div class="nav-links"><a class="" href="index.html#about">About</a><a class="" href="index.html#departments">Departments</a><a class="" href="index.html#services">Services</a><a href="carbon-climate.html">Carbon &amp; Climate</a><a class="active" href="amman-areas.html">Amman Areas</a><a class="" href="complaints.html">Complaints</a></div><a class="nav-cta" href="index.html#contact">CONTACT <i class="bi bi-arrow-up-right"></i></a><button aria-label="Menu" class="menu-btn"><i class="bi bi-list"></i></button></div></div>
+<main><section class="area-hero"><div class="shell"><div class="area-hero-card reveal" style="background-image:url('images/west-amman.jpg')"><div class="area-hero-content"><span class="eyebrow">SERVICE SECTOR 03</span><h1>West Amman</h1><p>A western service network connecting Badr Al-Jadida, Sweileh, Wadi Al-Seer and Marj Al-Hamam.</p><div class="sector-meta"><span>04 COVERED AREAS</span><span>OPERATOR • IMDAAD</span><span>غرب عمّان</span></div></div></div></div></section>
+<section class="section-sm"><div class="shell content-grid"><div class="sticky-title reveal"><span class="eyebrow">SECTOR OVERVIEW</span><h2>A clearer view of the area.</h2><p>The previous sector pages have been replaced with one consistent, light visual system. The important information is now easier to scan: sector number, operator and covered districts.</p></div><div class="prose reveal"><p><strong>West Amman</strong> is part of AVTR’s five-sector service coverage model across the capital. Service delivery within this sector is associated with <strong>IMDAAD</strong>, while operational monitoring and field follow-up connect the sector to the wider AVTR system.</p><div class="operator-card" style="margin-top:28px"><div><span>OPERATING COMPANY</span><h3>IMDAAD</h3></div><div class="operator-badge">03</div></div></div></div></section>
+<section class="section"><div class="shell"><div class="section-head reveal"><div><span class="eyebrow">COVERED DISTRICTS</span><h2>04 areas.<br/>One sector.</h2></div><p>Each covered district is presented as a clean, independent card so the sector structure is immediately understandable.</p></div><div class="districts"><button class="district reveal district-action" data-district-id="badr-al-jadida" type="button"><small>AREA 01</small><div><h3>Badr Al-Jadida</h3><p>بدر الجديدة</p></div><span class="district-open">VIEW ON MAP</span></button><button class="district reveal district-action" data-district-id="sweileh" type="button"><small>AREA 02</small><div><h3>Sweileh</h3><p>صويلح</p></div><span class="district-open">VIEW ON MAP</span></button><button class="district reveal district-action" data-district-id="wadi-al-seer" type="button"><small>AREA 03</small><div><h3>Wadi Al-Seer</h3><p>وادي السير</p></div><span class="district-open">VIEW ON MAP</span></button><button class="district reveal district-action" data-district-id="marj-al-hamam" type="button"><small>AREA 04</small><div><h3>Marj Al-Hamam</h3><p>مرج الحمام</p></div><span class="district-open">VIEW ON MAP</span></button></div></div></section>
+<section class="section district-explorer-section" id="district-explorer">
+<div class="shell">
+<div class="section-head reveal">
+<div><span class="eyebrow">DISTRICT EXPLORER</span><h2>Click a district.<br/>Understand its place.</h2></div>
+<p>Explore district location, GAM administrative boundary relationships, area, population profile and neighborhoods. The map uses approximate district centers for navigation; the official GAM profile remains the reference for administrative descriptions.</p>
+</div>
+<div class="district-map-tools reveal">
+<button data-fit-sector="" type="button"><i class="bi bi-arrows-fullscreen"></i> VIEW FULL SECTOR</button>
+<button data-locate-user="" type="button"><i class="bi bi-crosshair"></i> MY LOCATION</button>
+<span><i class="bi bi-shield-check"></i> GAM PROFILE DATA</span>
+</div>
+<div class="district-explorer-grid reveal">
+<div class="district-map-wrap">
+<div aria-label="Interactive district map" data-sector="west" id="districtMap"></div>
+<div class="district-map-note"><i class="bi bi-info-circle"></i><span>Administrative relationship view — not a cadastral or survey boundary map.</span></div>
+</div>
+<aside class="district-detail-panel">
+<span class="district-detail-eyebrow" data-district-eyebrow=""></span>
+<div class="district-title-row"><div><h3 data-district-name="">District</h3><p data-district-ar=""></p></div><div class="district-pin"><i class="bi bi-geo-alt-fill"></i></div></div>
+<p class="district-location" data-district-location=""></p>
+<div class="district-metrics"><div><small>AREA</small><strong data-district-area="">—</strong></div><div><small>POPULATION PROFILE</small><strong data-district-population="">—</strong></div></div>
+<div class="district-subhead"><span>OFFICIAL BOUNDARY RELATION</span><small>GAM district profile</small></div>
+<div data-district-bounds=""></div>
+<div class="district-subhead"><span>NEIGHBORHOODS / LOCALITIES</span><small>Selected examples from GAM profile</small></div>
+<div class="neighborhood-chips" data-district-neighborhoods=""></div>
+<div class="district-actions"><a class="btn btn-primary" data-district-maps="" rel="noopener" target="_blank">OPEN IN GOOGLE MAPS <i class="bi bi-box-arrow-up-right"></i></a><a class="btn btn-light" data-district-source="" rel="noopener" target="_blank">OFFICIAL GAM PROFILE</a></div>
+</aside>
+</div>
+</div>
+</section><section class="section-sm"><div class="shell"><div class="section-head reveal"><div><span class="eyebrow">CONTINUE EXPLORING</span><h2>Other Amman sectors.</h2></div><a class="btn btn-light" href="amman-areas.html">VIEW ALL AREAS</a></div><div class="area-nav-grid"><a class="area-nav-card" href="north-amman.html"><span>SECTOR 01</span><strong>North Amman</strong></a><a class="area-nav-card" href="east-amman.html"><span>SECTOR 02</span><strong>East Amman</strong></a><a class="area-nav-card" href="south-amman.html"><span>SECTOR 04</span><strong>South Amman</strong></a><a class="area-nav-card" href="central-amman.html"><span>SECTOR 05</span><strong>Central Amman</strong></a></div></div></section></main>
+<footer class="footer"><div class="shell"><div class="footer-main"><div class="footer-brand"><img alt="AVTR" src="images/avtr-logo.png"/><p>Shaping a cleaner, smarter and more circular future for Amman.</p></div><div class="footer-links"><a href="index.html#about">About</a><a href="index.html#services">Services</a><a href="amman-areas.html">Amman Areas</a><a href="monitoring-room.html">Monitoring Room</a><a href="field-operations.html">Field Operations</a><a href="complaints.html">Complaints</a><a href="carbon-climate.html">Carbon &amp; Climate</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> AMMAN VISION TREATMENT &amp; RECYCLING</span><span>AMMAN • JORDAN</span><span class="creator-credit">WEBSITE DESIGN &amp; DEVELOPMENT <strong>MHMD OBEIDAT</strong></span></div></div></footer><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="district-explorer.js"></script><script src="main.js"></script></body></html>

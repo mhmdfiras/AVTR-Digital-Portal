@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0f7f50">
+<title>AVTR Digital Platform</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+:root{--bg:#f5f8f5;--card:rgba(255,255,255,.9);--ink:#102018;--muted:#6d7a73;--green:#118451;--green2:#1aab6c;--line:rgba(16,32,24,.10);--shadow:0 26px 75px rgba(18,68,42,.10)}
+body{min-height:100vh;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0%,rgba(67,202,129,.14),transparent 28%),radial-gradient(circle at 95% 92%,rgba(44,103,169,.10),transparent 26%),var(--bg);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(17,132,81,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(17,132,81,.025) 1px,transparent 1px);background-size:40px 40px;mask-image:linear-gradient(to bottom,#000,transparent 78%)}
+.wrap{width:min(1180px,92%);margin:auto;padding:26px 0 44px;position:relative;z-index:1}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 16px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.78);backdrop-filter:blur(16px);box-shadow:0 16px 48px rgba(18,68,42,.06)}
+.brand{display:flex;align-items:center;gap:13px}.brand img{width:58px;height:42px;object-fit:contain}.brand strong{font-size:13px;letter-spacing:1.4px}.brand small{display:block;margin-top:3px;color:var(--muted);font-size:10px}.pill{padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:10px;font-weight:900;letter-spacing:.8px;color:#4d5c54}.pill:before{content:"";display:inline-block;width:8px;height:8px;background:#18a766;border-radius:50%;margin-right:7px;box-shadow:0 0 0 6px rgba(24,167,102,.08)}
+.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:center;padding:74px 0 48px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-size:11px;font-weight:900;letter-spacing:2px}.eyebrow:before{content:"";width:26px;height:2px;background:var(--green)}
+h1{font-size:clamp(50px,7.3vw,95px);line-height:.92;letter-spacing:-5px;margin:16px 0 23px;max-width:800px}.accent{color:var(--green)}.hero p{max-width:690px;color:var(--muted);font-size:16px;line-height:1.8}
+.hero-panel{justify-self:end;width:min(380px,100%);padding:27px;border-radius:28px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow)}.hero-panel small{color:var(--green);font-weight:900;letter-spacing:1.4px}.hero-panel h2{font-size:31px;line-height:1.05;margin:12px 0}.hero-panel p{font-size:13px}.domain{margin-top:17px;padding:12px 13px;border-radius:13px;background:#102018;color:#e0f8ea;font:12px Consolas,monospace}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:8px 0 18px}.section-head h2{font-size:29px;letter-spacing:-1px}.section-head p{max-width:460px;text-align:right;color:var(--muted);font-size:12px;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{position:relative;min-height:390px;padding:25px;border:1px solid var(--line);border-radius:28px;background:var(--card);box-shadow:0 20px 58px rgba(18,68,42,.07);overflow:hidden;transition:.28s}.card:hover{transform:translateY(-7px);box-shadow:0 34px 78px rgba(18,68,42,.12)}.card:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-70px;top:-72px;background:radial-gradient(circle,rgba(17,132,81,.17),transparent 68%)}
+.card-top{display:flex;justify-content:space-between;align-items:center}.num{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:#e7f5ed;color:var(--green);font-weight:900}.status{position:relative;z-index:2;padding:8px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:10px;font-weight:900;letter-spacing:.6px}.status.live{color:#0d7a49}.status.wait{color:#966316}.icon{font-size:39px;margin:43px 0 18px}.card h3{font-size:28px;line-height:1.08;letter-spacing:-1px;margin-bottom:12px}.card p{color:var(--muted);font-size:13px;line-height:1.72;max-width:310px}.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.tag{font-size:10px;font-weight:800;padding:6px 9px;border-radius:999px;border:1px solid var(--line);background:#f9fbfa;color:#526158}
+.actions{position:absolute;left:25px;right:25px;bottom:25px}.btn{width:100%;border:0;text-decoration:none;display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-radius:14px;background:var(--green);color:#fff;font-size:12px;font-weight:900;cursor:pointer;transition:.22s}.btn:hover{background:#0b6e43}.btn.disabled{background:#dce4df;color:#7a8880;cursor:not-allowed}.note{margin-top:22px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.66);color:var(--muted);font-size:12px;line-height:1.65}.note strong{color:var(--ink)}
+footer{margin-top:52px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:11px}footer strong{color:var(--ink)}
+@media(max-width:980px){.hero{grid-template-columns:1fr;padding-top:52px}.hero-panel{justify-self:start}.grid{grid-template-columns:1fr}.card{min-height:330px}.icon{margin:28px 0 15px}.section-head{align-items:flex-start;flex-direction:column}.section-head p{text-align:left}}
+@media(max-width:620px){.wrap{width:min(94%,1180px);padding-top:16px}.nav{border-radius:18px}.brand small{display:none}.hero{padding:42px 0 34px}h1{font-size:50px;letter-spacing:-3px}.hero p{font-size:14px}.card{padding:21px;min-height:350px}.actions{left:21px;right:21px;bottom:21px}footer{flex-direction:column}.hero-panel{width:100%}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<nav class="nav"><div class="brand"><img src="./avtr-logo.png" alt="AVTR"><div><strong>AVTR DIGITAL PLATFORM</strong><small>Integrated digital operations portal</small></div></div><div class="pill">PUBLIC PORTAL</div></nav>
+<section class="hero"><div><span class="eyebrow">SHAPING NEW VISION</span><h1>One platform.<br><span class="accent">Three systems.</span></h1><p>A unified entry point for AVTR corporate services, vehicle intelligence and field-monitoring tools — designed for desktop and mobile access.</p></div><div class="hero-panel"><small>PRIMARY DOMAIN</small><h2>One link.<br>Clear access.</h2><p>The production target for this platform is one main domain, with the operational systems connected behind it.</p><div class="domain">https://avtr-digital.com</div></div></section>
+<div class="section-head"><div><span class="eyebrow">DIGITAL SYSTEMS</span><h2>Choose a system</h2></div><p>The corporate website is ready for GitHub Pages now. Vehicle Intelligence and Field Monitoring will be enabled when their Python services are deployed.</p></div>
+<section class="grid">
+<article class="card"><div class="card-top"><div class="num">01</div><div class="status live">LIVE</div></div><div class="icon">🌿</div><h3>AVTR Corporate Website</h3><p>Corporate services, complaints, Carbon & Climate, interactive Amman areas and manager-presentation content.</p><div class="tags"><span class="tag">HTML / CSS / JS</span><span class="tag">RESPONSIVE</span><span class="tag">MAPS</span></div><div class="actions"><a class="btn" id="corporateBtn" href="./corporate/index.html">OPEN WEBSITE <span>↗</span></a></div></article>
+<article class="card"><div class="card-top"><div class="num">02</div><div class="status wait" id="vehicleStatus">NEXT DEPLOY</div></div><div class="icon">🚛</div><h3>Vehicle Intelligence</h3><p>Vehicle profiles, records, users, fleet intelligence and operational analysis for AVTR vehicle activity.</p><div class="tags"><span class="tag">PYTHON</span><span class="tag">FLASK</span><span class="tag">OPERATIONS</span></div><div class="actions"><a class="btn disabled" id="vehicleBtn" href="#">DEPLOYING NEXT <span>→</span></a></div></article>
+<article class="card"><div class="card-top"><div class="num">03</div><div class="status wait" id="fieldStatus">NEXT DEPLOY</div></div><div class="icon">🗺️</div><h3>Field Monitoring System</h3><p>JOTRACK route analysis, road matching, 50 m visit verification and operational review workflow.</p><div class="tags"><span class="tag">PYTHON</span><span class="tag">STREAMLIT</span><span class="tag">GEO ANALYSIS</span></div><div class="actions"><a class="btn disabled" id="fieldBtn" href="#">DEPLOYING NEXT <span>→</span></a></div></article>
+</section>
+<div class="note"><strong>Deployment sequence:</strong> publish this portal first, then deploy Vehicle Intelligence and Field Monitoring, then connect their production URLs in <code>config.js</code>. Finally, point <strong>avtr-digital.com</strong> to this GitHub Pages site.</div>
+<footer><span>AVTR DIGITAL PLATFORM</span><span>Website design & development • <strong>MHMD OBEIDAT</strong></span></footer>
+</main>
+<script src="./config.js"></script>
+<script>
+(function(){
+ const cfg=window.AVTR_APPS||{};
+ function wire(id,statusId,url,label){
+   const btn=document.getElementById(id), st=document.getElementById(statusId);
+   if(url){btn.href=url;btn.target='_blank';btn.classList.remove('disabled');btn.innerHTML=label+' <span>↗</span>';st.textContent='ONLINE';st.classList.remove('wait');st.classList.add('live');}
+   else{btn.addEventListener('click',e=>e.preventDefault());}
+ }
+ wire('vehicleBtn','vehicleStatus',cfg.vehicle,'OPEN SYSTEM');
+ wire('fieldBtn','fieldStatus',cfg.field,'OPEN SYSTEM');
+})();
+</script>
+</body>
+</html>

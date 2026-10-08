@@ -1,0 +1,20 @@
+UPLOAD THIS FOLDER TO THE PUBLIC REPOSITORY:
+https://github.com/mhmdfiras/AVTR-Digital-Portal.git
+
+PowerShell from inside this folder:
+
+git init
+git add .
+git commit -m "Launch AVTR Digital Portal"
+git branch -M main
+git remote add origin https://github.com/mhmdfiras/AVTR-Digital-Portal.git
+git push -u origin main
+
+Then GitHub:
+Settings > Pages > Deploy from a branch > main > /(root) > Save
+
+Initial Pages URL:
+https://mhmdfiras.github.io/AVTR-Digital-Portal/
+
+Target production domain after DNS setup:
+https://avtr-digital.com

@@ -1,0 +1,54 @@
+PUBLIC-FACING COMPLAINTS EMAIL
+===============================
+Displayed on the website: avtr@amman.com
+Actual FormSubmit recipient: MHMDFIRAS01@GMAIL.COM
+
+NOTE: avtr@amman.com is currently a display address only. Direct emails sent to that address will work only if the amman.com mail system is configured to create/forward that mailbox. The website complaint form itself sends to the Gmail recipient below.
+
+AVTR COMPLAINTS PAGE - EMAIL ONLY
+=================================
+
+Complaint page:
+  complaints.html
+
+Configured complaint email:
+  MHMDFIRAS01@GMAIL.COM
+
+HOW DELIVERY WORKS
+------------------
+1) EMAIL + PHOTO
+   The form uses FormSubmit to forward the complaint and uploaded image to:
+   MHMDFIRAS01@GMAIL.COM
+
+   IMPORTANT: FormSubmit requires ONE-TIME activation for a new receiving email.
+   Before publishing the site, submit one TEST complaint from complaints.html.
+   Then open MHMDFIRAS01@GMAIL.COM and click the activation/confirmation email
+   sent by FormSubmit. After activation, future form submissions are forwarded.
+
+   IMPORTANT: Activate before accepting real complaints with photos. FormSubmit
+   states that submissions can be retained before activation, but uploaded files
+   are not retained while waiting for activation.
+
+2) PHOTO
+   The photo is attached to the email submission (JPG / PNG / WEBP, max 10 MB).
+
+3) LOCATION
+   "Use my current location" uses browser geolocation. The user must approve the
+   browser location permission. The coordinates and a Google Maps link are then
+   included in the email form data.
+
+4) FOLLOW-UP
+   Email is the only configured communication and follow-up channel.
+   The complaint form requires the reporter's email address.
+
+LOCAL TEST
+----------
+Open a terminal inside the AVTR folder and run:
+
+  python -m http.server 8000
+
+Then open:
+
+  http://localhost:8000
+
+Do not test FormSubmit by opening the HTML directly with file://.

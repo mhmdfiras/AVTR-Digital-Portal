@@ -1,0 +1,42 @@
+AVTR — MANAGER PRESENTATION EDITION
+===================================
+
+WHAT WAS ADDED
+- Interactive Amman service-sector map on the home page.
+- Five selectable service sectors with operator labels and links to each sector page.
+- Smart Operating Model: Monitor -> Field Check -> Route Action -> Learn & Improve.
+- Circular City / future priorities panel aligned with AVTR's public vision and strategic direction.
+- Live Amman time chip in the home hero.
+- Modern motion, card spotlight, scroll progress, mobile navigation and responsive layout.
+- Website credit across the site: MHMD OBEIDAT.
+
+MAP NOTE
+The interactive map is designed as a service-coverage overview for presentation and navigation.
+It is not intended to represent legal or surveyed administrative boundaries.
+The map uses Leaflet and OpenStreetMap and therefore needs internet access for map tiles.
+
+HOW TO RUN
+1. Double-click START-AVTR.bat
+2. Open http://localhost:8000
+
+PHONE / EXTERNAL DEMO
+Keep the local server running, then in a second PowerShell window run:
+cloudflared tunnel --url http://localhost:8000
+Open the generated https://*.trycloudflare.com link on the phone.
+
+PUBLIC CONTENT REFERENCES USED FOR THE PRESENTATION DIRECTION
+- https://avtr.jo/
+- https://avtr.jo/about/
+- https://avtr.jo/services/
+- https://avtr.jo/blogs/amman-ghabawi-landfill-gas-to-energy/
+
+Prepared as a presentation-ready website concept.
+Website Design & Development: MHMD OBEIDAT
+
+
+=== MAPS + CARBON UPGRADE ===
+- Footer designer credit MHMD OBEIDAT is now interactive. Clicking it opens a contact card with 00962795151152 and a one-tap call link.
+- Every Amman sector page now has a District Explorer map. Click a district card (for example East Amman > Tareq) to see its approximate map position, area, 2015 GAM population profile, official neighboring-boundary description and neighborhoods.
+- The map intentionally labels itself as an administrative relationship view, not a cadastral/survey boundary map. Official GAM district PDF links are provided for verification.
+- New Carbon & Climate page: Carbon Credits Management, MRV workflow, GHG reduction logic and Al Ghabawi Project 3370 / Article 6.4 / ACM0001 case study.
+- Carbon content is based on AVTR published services/project information; no live carbon-credit quantities are invented.
